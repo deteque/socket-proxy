@@ -29,5 +29,11 @@ Example:
 	docker run \
 		--rm \
 		--detach \
+		-v /etc/dnstap:/etc/dnstap \
+		socket-proxy \
+		socket-proxy \
+		-s /etc/dnstap/dnstap.sock \
+		-d /etc/dnstap/dnstap-proxy1.sock \
+		-d /etc/dnstap/dnstap-proxy2.sock
 
 </pre>
