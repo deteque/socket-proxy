@@ -76,7 +76,9 @@ func handleConn(conn net.Conn, broker *Broker) {
 		if err != nil {
 			continue
 		}
-		broker.Publish(buf[:n])
+		frame := make([]byte, n)
+		copy(frame, buf[:n])
+		broker.Publish(frame)
 	}
 
 }
@@ -112,15 +114,11 @@ func writeFrames(conn net.Conn, broker *Broker) {
 		count++
 		_, err = fwriter.WriteFrame(frame)
 		if err != nil {
-			fmt.Println(err, "error writing frame")
 			return
 		}
-		if count == 100000 {
-			err := fwriter.Flush()
-			if err != nil {
-				fmt.Println(err, "flush")
-				return
-			}
+		err := fwriter.Flush()
+		if err != nil {
+			return
 		}
 	}
 }
