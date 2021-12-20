@@ -1,7 +1,7 @@
 FROM debian:bullseye-slim
 LABEL maintainer="Deteque Support <support@deteque.com>"
 ENV GOLANG_VERSION "1.17.5"
-ENV BUILD_DATE "2021-12-15"
+ENV BUILD_DATE "2021-12-20"
 
 WORKDIR /tmp
 RUN mkdir /root/socket-proxy \

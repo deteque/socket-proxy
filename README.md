@@ -18,9 +18,9 @@ https://deteque.com/socket-proxy/
 # Downloading SOCKET-PROXY
 
 The source code and sample configuration file are is available three ways - as an https transfer, via Github or as a prebuilt Docker image:
-- Web: https://deteque.com/dnstap-sensor/dnstap-sensor.tar.gz
-- Docker: docker pull deteque/dnstap-sensor
-- Git: git clone https://github.com/deteque/dnstap-sensor.git
+- Web: https://deteque.com/socket-proxy/
+- Docker: docker pull deteque/socket-proxy
+- Git: git clone https://github.com/deteque/socket-proxy.git
 
 # Running socket-proxy
 Example:
