@@ -1,7 +1,7 @@
 FROM debian:bookworm-slim
 LABEL maintainer="Deteque Support <support@deteque.com>"
-ENV GOLANG_VERSION="1.21.5"
-ENV BUILD_DATE="2023-12-12"
+ENV GOLANG_VERSION="1.21.6"
+ENV BUILD_DATE="2024-01-10"
 
 WORKDIR /tmp
 RUN mkdir /root/socket-proxy \
