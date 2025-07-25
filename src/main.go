@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	VERSION = "socket-relay VERSION: 20240920.0"
+	VERSION = "socket-relay VERSION: 20250724.0"
 	RETRY_DELAY = 5 //seconds
 	KILOBYTE = 1024
 	BUFFER_SIZE = 128
